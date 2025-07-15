@@ -49,4 +49,5 @@ class ProductManager {
   }
 
   bool _isValidIndex(int index) => index >= 0 && index < _products.length;
+  List<Product> get products => _products;
 }
