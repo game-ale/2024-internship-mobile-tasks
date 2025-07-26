@@ -85,12 +85,13 @@ class DetailsPage extends StatelessWidget {
                           itemCount: 7,
                           itemBuilder: (context, index) {
                             final number = 39 + index;
+                            final isTarget = index == 2; 
                             return Container(
                               width: 60,
                               height: 60,
                               margin: EdgeInsets.all(8),
                               decoration: BoxDecoration(
-                                color: Colors.white,
+                                color: isTarget ?  AppColors.secondary : Colors.white,
                                 borderRadius: BorderRadius.circular(10),
                                 boxShadow: [
                                   BoxShadow(
@@ -103,9 +104,12 @@ class DetailsPage extends StatelessWidget {
                               ),
                               alignment: Alignment.center,
                               child: Text(
-                                number.toString(),
-                                style: AppTextStyles.cardProductName,
-                              ),
+                                  number.toString(),
+                                  style: AppTextStyles.cardProductName.copyWith(
+                                  color: index == 2 ? Colors.white : Colors.black, 
+  ),
+),
+
                             );
                           },
                         ),
