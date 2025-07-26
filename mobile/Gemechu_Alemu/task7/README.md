@@ -91,7 +91,7 @@ Named routes are used throughout to ensure a maintainable and scalable codebase.
 ![Add/Edit Screen](assets/homepage1.png)
 
 ### search of product 
-![search of product](assets/homepage1.png)
+![search of product](assets/homepage2.png)
 
 
 📘 Additional Notes
